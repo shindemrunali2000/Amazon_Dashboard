@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    
+}
+
+div{
+    
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    display:flex;
+    /* justify-self: start; */
+    /* flex-wrap: wrap-reverse; */
+    align-items: center ;
+}
+#container{
+width: 800px;
+height: 200px;
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: pink;
+}
+
+#box3{
+    background-color: chocolate;
+}

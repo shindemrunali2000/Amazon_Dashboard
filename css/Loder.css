@@ -1,0 +1,18 @@
+.loader{
+width:200px;
+height: 200px;
+border: 20px solid blueviolet;
+border-top: 20px solid black ;
+border-radius: 50%;
+animation: spianimation 3s ease-inS 0s infinite normal;  ;
+
+}
+@keyframes spianimation{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+

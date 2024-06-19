@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #search-results {
+            margin-top: 20px;
+        }
+
+        .result-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Our Search Engine</h1>
+        <form id="search-form">
+            <input type="text" id="business-search" placeholder="Enter a business name...">
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="search-results">
+            <!-- The search results will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for handling search form submission and displaying search results
+        const searchForm = document.getElementById('search-form');
+        const searchInput = document.getElementById('business-search');
+        const searchResultsDiv = document.getElementById('search-results');
+
+        searchForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const searchTerm = searchInput.value.trim();
+            if (searchTerm !== '') {
+                // Here you should implement the logic to fetch and display the search results from your server or API
+                // For this basic example, we'll just display a few dummy results.
+                const dummyResults = ['Result 1', 'Result 2', 'Result 3'];
+
+                searchResultsDiv.innerHTML = '';
+                for (const result of dummyResults) {
+                    const resultItem = document.createElement('div');
+                    resultItem.classList.add('result-item');
+                    resultItem.textContent = result;
+                    searchResultsDiv.appendChild(resultItem);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin:0px;
+    font-family:Arial;
+    border: border-box;
+}
+/*  navbar */
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+/* navbar logo box1 */
+.nev-logo{
+    height: 50px;
+    width: 100px;
+
+}
+.logo{
+    height: 50px;
+    width:100px;
+    background-size: cover;
+    background-image:url("..//amazon_logo.png");
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+
+}
+
+/*nav address box2   */
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left:3px ;
+}
+.add-icon{
+
+    display: flex;
+    align-items: center;
+}
+
+/* nav search box3 */
+
+.nav-search{
+    display: flex;
+    margin-left: 30px;
+    /* background-color: pink; */
+    border-radius: 4px;
+    width: 620px;
+    height: 40px;
+    justify-content: space-evenly;
+}
+.nav-search:hover{
+    border: 2px solid #febd68 ;
+}
+
+.search-select{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    align-items: center;
+    height: 40px;
+    background-color: #f3f3f3;
+    text-align: center;
+    border: none;
+
+   
+
+}
+
+.search-input{
+    width:533px;
+    font-size: 1rem;
+    border: none;
+
+}
+
+.Search-icon{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+
+}
+
+/* nav Box4 */
+span{
+    font-size:0.7rem ;
+    font-weight: 700;
+
+}
+
+.nav-first{
+    font-size: 0.85rem;
+    font-weight:100;
+}
+
+/* nav-cart Box5 */
+.nav-cart i{
+font-size:30px ;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+
+
+
+/* panel Box 1 */
+.panel{
+   display: flex;
+    height: 40px;
+    background-color: #222f30;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.panel-all p{
+    display: inline;
+    
+}
+

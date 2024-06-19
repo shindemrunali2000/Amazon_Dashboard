@@ -1,0 +1,2 @@
+import Function_program
+Function_program.calculation(40,10)

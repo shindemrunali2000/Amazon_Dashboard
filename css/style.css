@@ -1,0 +1,22 @@
+*{
+    color: red;
+}
+h1{
+    color:rgb(126, 17, 68);
+}
+#headingtwo{
+    color: chartreuse;
+}
+#headingThree{
+    color: blueviolet;
+}
+
+button{
+    background-color: blueviolet;
+}
+/* body{
+    background-color: aqua;
+} */
+.myclass{
+ color: blue;
+}

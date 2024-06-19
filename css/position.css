@@ -1,0 +1,35 @@
+div{
+  background-color: aqua; 
+  width: 100px;
+  height: 100px; 
+  border: 2px solid black ;
+  display: inline-block;
+}
+
+#Box1{
+    position: static;
+    /* changes nahi hoti manaje yavar top bottom left right chnges kele teri kahich farak padat nahi */
+ 
+} 
+#Box2{
+    position: relative;
+    top: 10px;
+    left:20px;
+    /* changes  hota  manaje yavar top bottom left right chnges kele ter farak padato  */
+}
+#Box3{
+    position:absolute;
+    top:500px;
+    /* absolute made parent child element made kam karata jeva child element made chenges hotat teva te chnges parent element la darun chalata  manaje child Box3 chi top:10px he body tag pasun 10px ahe  */
+}
+#Box4{
+    position:fixed;
+    left: 10px;
+    top:0px;
+    /* he browser releted changes karat */
+}
+#Box5{
+    position: sticky;
+    top:0px;
+    /* jeva te 0px la set hot teva te scrolling karayach band hot */
+}

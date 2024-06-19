@@ -1,0 +1,18 @@
+div{
+    background-color: aqua; 
+    width: 100px;
+    height: 100px; 
+    border: 2px solid black ;
+    display: inline-block;
+  }
+  
+  #Box2{
+    position: absolute;
+    left:10px;
+    top:50px;
+
+    z-index: -1;
+  }
+  #Box1{
+    z-index: 1;
+  }
